@@ -130,16 +130,15 @@ bubbleShort(arr2)
 // // step 4:- fir ek or variable banyga to swap karna ma amdad karaga.
 let arr3 = [2, 5, 7, 1, 6];
 function selectionSort(arr3) {
-    let midPoint;
+    let minIndex=0;
     for (let i = 0; i < arr3.length; i++) {
-        midPoint = i;
         for (let j = i + 1; j < arr3.length; j++) {
-            if (arr3[midPoint] > arr3[j]) {
-                midPoint = j;
+            if (arr3[minIndex] > arr3[j]) {
+                minIndex = j;
             }
         }
-        let swap = arr3[midPoint];
-        arr3[midPoint] = arr3[i];
+        let swap = arr3[minIndex];
+        arr3[minIndex] = arr3[i];
         arr3[i] = swap;
     }
     console.log(arr3);
