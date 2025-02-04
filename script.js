@@ -154,7 +154,6 @@ let arr4 = [2, 5, 7, 1, 6];
 let swap;
 for (let i = 1; i < arr4.length; i++) {
     swap = arr4[i]
-
     for (let j = i - 1; j >= 0; j--) {
         if (arr4[j] > swap) {
             arr4[j + 1] = arr4[j]; 
